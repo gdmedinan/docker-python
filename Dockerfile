@@ -20,7 +20,7 @@ RUN pip install --trusted-host pypi.python.org -r requirements.txt
 EXPOSE 8081
 
 # Define environment variable
-ENV MONGOHOST localhost
+ENV MONGOHOST 172.17.0.1
 ENV MONGOPORT 27017
 
 # Run app.py when the container launches
